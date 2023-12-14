@@ -92,23 +92,23 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Name</th>
+												<th>Nama</th>
 												<th>Email</th>
-												<th>Contact No</th>
-												<th>Message</th>
-												<th>Posting date</th>
-												<th>Action</th>
+												<th>Nomor Telepon</th>
+												<th>Pesan</th>
+												<th>Tanggal Posting</th>
+												<th>Aksi</th>
 											</tr>
 										</thead>
 										<tfoot>
 											<tr>
 												<th>#</th>
-												<th>Name</th>
+												<th>Nama</th>
 												<th>Email</th>
-												<th>Contact No</th>
-												<th>Message</th>
-												<th>Posting date</th>
-												<th>Action</th>
+												<th>Nomor Telepon</th>
+												<th>Pesan</th>
+												<th>Tanggal Posting</th>
+												<th>Aksi</th>
 											</tr>
 											</tr>
 										</tfoot>
@@ -129,7 +129,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<td><?php echo htmlentities($result->Message); ?></td>
 														<td><?php echo htmlentities($result->PostingDate); ?></td>
 														<?php if ($result->status == 1) {
-														?><td>Read</td>
+														?><td>Dibaca</td>
 														<?php } else { ?>
 
 															<td><a href="manage-conactusquery.php?eid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Do you really want to read')">Pending</a>

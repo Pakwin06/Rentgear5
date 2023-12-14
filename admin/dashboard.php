@@ -70,7 +70,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<div class="stat-panel-title text-uppercase">Users</div>
 													</div>
 												</div>
-												<a href="reg-users.php" class="block-anchor panel-footer">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+												<a href="reg-users.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
 											</div>
 										</div>
 										<div class="col-md-3">
@@ -88,7 +88,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<div class="stat-panel-title text-uppercase">List Kendaraan</div>
 													</div>
 												</div>
-												<a href="manage-vehicles.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+												<a href="manage-vehicles.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
 											</div>
 										</div>
 										<div class="col-md-3">
@@ -107,7 +107,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<div class="stat-panel-title text-uppercase">Total Bookings</div>
 													</div>
 												</div>
-												<a href="manage-bookings.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+												<a href="manage-bookings.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
 											</div>
 										</div>
 										<div class="col-md-3">
@@ -125,7 +125,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<div class="stat-panel-title text-uppercase">Listed Brands</div>
 													</div>
 												</div>
-												<a href="manage-brands.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+												<a href="manage-brands.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
 											</div>
 										</div>
 									</div>
@@ -152,7 +152,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 									<div class="stat-panel-title text-uppercase">Testimonials</div>
 								</div>
 							</div>
-							<a href="testimonials.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+							<a href="testimonials.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
 						</div>
 					</div>
 					<div class="col-md-3">
@@ -170,7 +170,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 									<div class="stat-panel-title text-uppercase">Pertanyaan dari website</div>
 								</div>
 							</div>
-							<a href="manage-conactusquery.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+							<a href="manage-conactusquery.php" class="block-anchor panel-footer text-center">Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
 						</div>
 					</div>
 

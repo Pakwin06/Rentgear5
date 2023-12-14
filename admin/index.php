@@ -49,17 +49,17 @@ if (isset($_POST['login'])) {
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3">
-						<h1 class="text-center text-bold mt-4x" style="color:#fff">Admin | Sign in</h1>
+						<h1 class="text-center text-bold mt-4x" style="color:#fff">Admin | Login UwU</h1>
 						<div class="well row pt-2x pb-3x bk-light">
 							<div class="col-md-8 col-md-offset-2">
 								<form method="post">
 
-									<label for="" class="text-uppercase text-sm">Your Username </label>
+									<label for="" class="text-uppercase text-sm">Username </label>
 									<input type="text" placeholder="Username" name="username" class="form-control mb">
 
 									<label for="" class="text-uppercase text-sm">Password</label>
 									<input type="password" placeholder="Password" name="password" class="form-control mb">
-									<input type="checkbox" onclick="togglePasswordVisibility()"> Show Password
+									<input type="checkbox" onclick="togglePasswordVisibility()"> Lihat
 									<div class="input-group-append">
 										<div class="input-group-text">
 
@@ -69,7 +69,7 @@ if (isset($_POST['login'])) {
 
 								</form>
 
-								<p style="margin-top: 4%" align="center"><a href="../index.php">Back to Home</a> </p>
+								<p style="margin-top: 4%" align="center"><a href="../index.php">Kembali ke Website Utama</a> </p>
 							</div>
 
 						</div>

@@ -107,7 +107,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Name</th>
+												<th>Nama</th>
 												<th>Vehicle</th>
 												<th>From Date</th>
 												<th>To Date</th>

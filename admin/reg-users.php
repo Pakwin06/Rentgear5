@@ -80,39 +80,39 @@ if (strlen($_SESSION['alogin']) == 0) {
 					<div class="row">
 						<div class="col-md-12">
 
-							<h2 class="page-title">Registered Users</h2>
+							<h2 class="page-title">Register Users</h2>
 
 							<!-- Zero Configuration Table -->
 							<div class="panel panel-default">
-								<div class="panel-heading">Reg Users</div>
+								<div class="panel-heading">Users</div>
 								<div class="panel-body">
-									<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
+									<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUKSES</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 									<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 										<thead>
 											<tr>
 												<th>#</th>
-												<th> Name</th>
+												<th> Nama</th>
 												<th>Email </th>
-												<th>Contact no</th>
+												<th>Nomor Telepon</th>
 												<th>DOB</th>
-												<th>Address</th>
-												<th>City</th>
-												<th>Country</th>
-												<th>Reg Date</th>
+												<th>Alamat</th>
+												<th>Kota</th>
+												<th>Negara</th>
+												<th>Tanggal Reg</th>
 
 											</tr>
 										</thead>
 										<tfoot>
 											<tr>
 												<th>#</th>
-												<th> Name</th>
+												<th> Nama</th>
 												<th>Email </th>
-												<th>Contact no</th>
+												<th>Nomor Telepon</th>
 												<th>DOB</th>
-												<th>Address</th>
-												<th>City</th>
-												<th>Country</th>
-												<th>Reg Date</th>
+												<th>Alamat</th>
+												<th>Kota</th>
+												<th>Negara</th>
+												<th>Tanggal Reg</th>
 											</tr>
 											</tr>
 										</tfoot>

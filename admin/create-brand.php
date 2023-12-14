@@ -83,19 +83,19 @@ if (strlen($_SESSION['alogin']) == 0) {
 					<div class="row">
 						<div class="col-md-12">
 
-							<h2 class="page-title">Create Brand</h2>
+							<h2 class="page-title">Buat Brand</h2>
 
 							<div class="row">
 								<div class="col-md-10">
 									<div class="panel panel-default">
-										<div class="panel-heading">Create Brand</div>
+										<div class="panel-heading">Buat Brand</div>
 										<div class="panel-body">
 											<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
 
 
 												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 												<div class="form-group">
-													<label class="col-sm-4 control-label">Brand Name</label>
+													<label class="col-sm-4 control-label">Nama Brand</label>
 													<div class="col-sm-8">
 														<input type="text" class="form-control" name="brand" id="brand" required>
 													</div>
@@ -108,7 +108,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<div class="form-group">
 													<div class="col-sm-8 col-sm-offset-4">
 
-														<button class="btn btn-primary" name="submit" type="submit">Submit</button>
+														<button class="btn btn-primary" name="submit" type="submit">Simpan</button>
 													</div>
 												</div>
 

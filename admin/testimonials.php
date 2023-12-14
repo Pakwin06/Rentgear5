@@ -100,28 +100,28 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<!-- Zero Configuration Table -->
 							<div class="panel panel-default">
-								<div class="panel-heading">User Testimonials</div>
+								<div class="panel-heading">Testimonials</div>
 								<div class="panel-body">
 									<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 									<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Name</th>
+												<th>Nama</th>
 												<th>Email</th>
 												<th>Testimonials</th>
-												<th>Posting date</th>
-												<th>Action</th>
+												<th>Tanggal Posting</th>
+												<th>Aksi</th>
 											</tr>
 										</thead>
 										<tfoot>
 											<tr>
 												<th>#</th>
-												<th>Name</th>
+												<th>Nama</th>
 												<th>Email</th>
 												<th>Testimonials</th>
-												<th>Posting date</th>
-												<th>Action</th>
+												<th>Tanggal Posting</th>
+												<th>Aksi</th>
 											</tr>
 										</tfoot>
 										<tbody>
@@ -140,10 +140,10 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<td><?php echo htmlentities($result->Testimonial); ?></td>
 														<td><?php echo htmlentities($result->PostingDate); ?></td>
 														<td><?php if ($result->status == "" || $result->status == 0) {
-															?><a href="testimonials.php?aeid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Do you really want to Active')"> Inactive</a>
+															?><a href="testimonials.php?aeid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('apakah kamu ingin mengaktifkannya?')"> Tidak Aktif</a>
 															<?php } else { ?>
 
-																<a href="testimonials.php?eid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Do you really want to Inactive')"> Active</a>
+																<a href="testimonials.php?eid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('apakah kamu ingin me-nonaktifkannya?')"> Aktif</a>
 														</td>
 													<?php } ?></td>
 													</tr>

@@ -101,19 +101,19 @@ if (strlen($_SESSION['alogin']) == 0) {
 					<div class="row">
 						<div class="col-md-12">
 
-							<h2 class="page-title">Change Password</h2>
+							<h2 class="page-title">Ganti Password</h2>
 
 							<div class="row">
 								<div class="col-md-10">
 									<div class="panel panel-default">
-										<div class="panel-heading">Form fields</div>
+										<div class="panel-heading">Form</div>
 										<div class="panel-body">
 											<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
 
 
-												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
+												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUKSES</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 												<div class="form-group">
-													<label class="col-sm-4 control-label">Current Password</label>
+													<label class="col-sm-4 control-label">Password Sekarang</label>
 													<div class="col-sm-8">
 														<input type="password" class="form-control" name="password" id="password" required>
 													</div>
@@ -121,7 +121,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<div class="hr-dashed"></div>
 
 												<div class="form-group">
-													<label class="col-sm-4 control-label">New Password</label>
+													<label class="col-sm-4 control-label">Password Baru</label>
 													<div class="col-sm-8">
 														<input type="password" class="form-control" name="newpassword" id="newpassword" required>
 													</div>
@@ -129,7 +129,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<div class="hr-dashed"></div>
 
 												<div class="form-group">
-													<label class="col-sm-4 control-label">Confirm Password</label>
+													<label class="col-sm-4 control-label">Ulang Password Baru</label>
 													<div class="col-sm-8">
 														<input type="password" class="form-control" name="confirmpassword" id="confirmpassword" required>
 													</div>
@@ -141,7 +141,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<div class="form-group">
 													<div class="col-sm-8 col-sm-offset-4">
 
-														<button class="btn btn-primary" name="submit" type="submit">Save changes</button>
+														<button class="btn btn-primary" name="submit" type="submit">Simpan</button>
 													</div>
 												</div>
 

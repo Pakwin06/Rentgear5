@@ -70,7 +70,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 					<div class="row">
 						<div class="col-md-12">
 
-							<h2 class="page-title">Confirmed Bookings</h2>
+							<h2 class="page-title">Konfirmasi Bookings</h2>
 
 							<!-- Zero Configuration Table -->
 							<div class="panel panel-default">
@@ -81,27 +81,27 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Name</th>
+												<th>Nama</th>
 												<th>Booking No.</th>
-												<th>Vehicle</th>
-												<th>From Date</th>
-												<th>To Date</th>
+												<th>Kendaraan</th>
+												<th>Dari Tanggal</th>
+												<th>Sampai Tanggal</th>
 												<th>Status</th>
-												<th>Posting date</th>
-												<th>Action</th>
+												<th>Tanggal Posting</th>
+												<th>Aksi</th>
 											</tr>
 										</thead>
 										<tfoot>
 											<tr>
 												<th>#</th>
-												<th>Name</th>
+												<th>Nama</th>
 												<th>Booking No.</th>
-												<th>Vehicle</th>
-												<th>From Date</th>
-												<th>To Date</th>
+												<th>Kendaraan</th>
+												<th>Dari Tanggal</th>
+												<th>Sampai Tanggal</th>
 												<th>Status</th>
-												<th>Posting date</th>
-												<th>Action</th>
+												<th>Tanggal Posting</th>
+												<th>Aksi</th>
 											</tr>
 										</tfoot>
 										<tbody>
@@ -137,7 +137,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<td>
 
 
-															<a href="bookig-details.php?bid=<?php echo htmlentities($result->id); ?>"> View</a>
+															<a href="bookig-details.php?bid=<?php echo htmlentities($result->id); ?>"> Lihat</a>
 														</td>
 
 													</tr>

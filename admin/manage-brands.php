@@ -84,28 +84,28 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 							<!-- Zero Configuration Table -->
 							<div class="panel panel-default">
-								<div class="panel-heading">Listed Brands</div>
+								<div class="panel-heading">List Brands</div>
 								<div class="panel-body">
 									<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 									<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Brand Name</th>
-												<th>Creation Date</th>
-												<th>Updation date</th>
+												<th>Nama Brand</th>
+												<th>Tanggal Pembuatan</th>
+												<th>Tanggal Update</th>
 
-												<th>Action</th>
+												<th>Aksi</th>
 											</tr>
 										</thead>
 										<tfoot>
 											<tr>
 												<th>#</th>
-												<th>Brand Name</th>
-												<th>Creation Date</th>
-												<th>Updation date</th>
+												<th>Nama Brand</th>
+												<th>Tanggal Pembuatan</th>
+												<th>Tanggal Update</th>
 
-												<th>Action</th>
+												<th>Aksi</th>
 											</tr>
 											</tr>
 										</tfoot>

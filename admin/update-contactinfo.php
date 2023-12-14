@@ -87,12 +87,12 @@ if (strlen($_SESSION['alogin']) == 0) {
 							<div class="row">
 								<div class="col-md-10">
 									<div class="panel panel-default">
-										<div class="panel-heading">Form fields</div>
+										<div class="panel-heading">Form</div>
 										<div class="panel-body">
 											<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
 
 
-												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
+												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUKSES</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 												<?php $sql = "SELECT * from  tblcontactusinfo ";
 												$query = $dbh->prepare($sql);
 												$query->execute();
@@ -102,19 +102,19 @@ if (strlen($_SESSION['alogin']) == 0) {
 													foreach ($results as $result) {				?>
 
 														<div class="form-group">
-															<label class="col-sm-4 control-label"> Address</label>
+															<label class="col-sm-4 control-label"> Alamat</label>
 															<div class="col-sm-8">
 																<textarea class="form-control" name="address" id="address" required><?php echo htmlentities($result->Address); ?></textarea>
 															</div>
 														</div>
 														<div class="form-group">
-															<label class="col-sm-4 control-label"> Email id</label>
+															<label class="col-sm-4 control-label"> Email Kami</label>
 															<div class="col-sm-8">
 																<input type="email" class="form-control" name="email" id="email" value="<?php echo htmlentities($result->EmailId); ?>" required>
 															</div>
 														</div>
 														<div class="form-group">
-															<label class="col-sm-4 control-label"> Contact Number </label>
+															<label class="col-sm-4 control-label"> Nomor Telepon </label>
 															<div class="col-sm-8">
 																<input type="text" class="form-control" value="<?php echo htmlentities($result->ContactNo); ?>" name="contactno" id="contactno" required>
 															</div>

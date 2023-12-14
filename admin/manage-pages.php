@@ -118,33 +118,33 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 					<div class="row">
 						<div class="col-md-12">
 
-							<h2 class="page-title">Manage Pages </h2>
+							<h2 class="page-title">Manage Halaman </h2>
 
 							<div class="row">
 								<div class="col-md-10">
 									<div class="panel panel-default">
-										<div class="panel-heading">Form fields</div>
+										<div class="panel-heading">Form</div>
 										<div class="panel-body">
 											<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
 
 
-												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
+												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUKSES</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 												<div class="form-group">
 													<label class="col-sm-4 control-label">Pilih Halaman</label>
 													<div class="col-sm-8">
 														<select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
-															<option value="" selected="selected" class="form-control">***Select One***</option>
+															<option value="" selected="selected" class="form-control">***Pilih***</option>
 															<option value="manage-pages.php?type=terms">Syarat dan Ketentuann</option>
 															<option value="manage-pages.php?type=privacy">Kebijakan dan Privasi</option>
 															<option value="manage-pages.php?type=aboutus">Tentang Kami</option>
-															<option value="manage-pages.php?type=faqs">FAQs</option>
+															<!-- <option value="manage-pages.php?type=faqs">FAQs</option> -->
 														</select>
 													</div>
 												</div>
 												<div class="hr-dashed"></div>
 
 												<div class="form-group">
-													<label class="col-sm-4 control-label">selected Page</label>
+													<label class="col-sm-4 control-label">Halaman Yang Dipilih</label>
 													<div class="col-sm-8">
 														<?php
 
@@ -175,7 +175,7 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
 												</div>
 
 												<div class="form-group">
-													<label class="col-sm-4 control-label">Page Details </label>
+													<label class="col-sm-4 control-label">Halaman Details </label>
 													<div class="col-sm-8">
 														<textarea class="form-control" rows="5" cols="50" name="pgedetails" id="pgedetails" placeholder="Package Details" required>
 										<?php

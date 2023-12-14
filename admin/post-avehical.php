@@ -135,25 +135,25 @@ if (strlen($_SESSION['alogin']) == 0) {
 					<div class="row">
 						<div class="col-md-12">
 
-							<h2 class="page-title">Post A Vehicle</h2>
+							<h2 class="page-title">Post Kendaraan</h2>
 
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-default">
-										<div class="panel-heading">Basic Info</div>
+										<div class="panel-heading">Info</div>
 										<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 
 										<div class="panel-body">
 											<form method="post" class="form-horizontal" enctype="multipart/form-data">
 												<div class="form-group">
-													<label class="col-sm-2 control-label">Vehicle Title<span style="color:red">*</span></label>
+													<label class="col-sm-2 control-label">Nama Kendaraan<span style="color:red">*</span></label>
 													<div class="col-sm-4">
 														<input type="text" name="vehicletitle" class="form-control" required>
 													</div>
-													<label class="col-sm-2 control-label">Select Brand<span style="color:red">*</span></label>
+													<label class="col-sm-2 control-label">pilih Brand<span style="color:red">*</span></label>
 													<div class="col-sm-4">
 														<select class="selectpicker" name="brandname" required>
-															<option value=""> Select </option>
+															<option value=""> Pilih </option>
 															<?php $ret = "select id,BrandName from tblbrands";
 															$query = $dbh->prepare($ret);
 															//$query->bindParam(':id',$id, PDO::PARAM_STR);
@@ -172,21 +172,21 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 												<div class="hr-dashed"></div>
 												<div class="form-group">
-													<label class="col-sm-2 control-label">Vehical Overview<span style="color:red">*</span></label>
+													<label class="col-sm-2 control-label">Overview<span style="color:red">*</span></label>
 													<div class="col-sm-10">
 														<textarea class="form-control" name="vehicalorcview" rows="3" required></textarea>
 													</div>
 												</div>
 
 												<div class="form-group">
-													<label class="col-sm-2 control-label">Price Per Day(in USD)<span style="color:red">*</span></label>
+													<label class="col-sm-2 control-label">Harga per hari(Rupiah)<span style="color:red">*</span></label>
 													<div class="col-sm-4">
 														<input type="text" name="priceperday" class="form-control" required>
 													</div>
-													<label class="col-sm-2 control-label">Select Fuel Type<span style="color:red">*</span></label>
+													<label class="col-sm-2 control-label">Pilih Bahan Bakar<span style="color:red">*</span></label>
 													<div class="col-sm-4">
 														<select class="selectpicker" name="fueltype" required>
-															<option value=""> Select </option>
+															<option value=""> Pilih </option>
 
 															<option value="Petrol">Petrol</option>
 															<option value="Diesel">Diesel</option>
@@ -197,11 +197,11 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 												<div class="form-group">
-													<label class="col-sm-2 control-label">Model Year<span style="color:red">*</span></label>
+													<label class="col-sm-2 control-label">Tahun Model <span style="color:red">*</span></label>
 													<div class="col-sm-4">
 														<input type="text" name="modelyear" class="form-control" required>
 													</div>
-													<label class="col-sm-2 control-label">Seating Capacity<span style="color:red">*</span></label>
+													<label class="col-sm-2 control-label">Kapasitas Kursi<span style="color:red">*</span></label>
 													<div class="col-sm-4">
 														<input type="text" name="seatingcapacity" class="form-control" required>
 													</div>
@@ -211,30 +211,30 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 												<div class="form-group">
 													<div class="col-sm-12">
-														<h4><b>Upload Images</b></h4>
+														<h4><b>Upload Foto</b></h4>
 													</div>
 												</div>
 
 
 												<div class="form-group">
 													<div class="col-sm-4">
-														Image 1 <span style="color:red">*</span><input type="file" name="img1" required>
+														Foto 1 <span style="color:red">*</span><input type="file" name="img1" required>
 													</div>
 													<div class="col-sm-4">
-														Image 2<span style="color:red">*</span><input type="file" name="img2" required>
+														Foto 2<span style="color:red">*</span><input type="file" name="img2" required>
 													</div>
 													<div class="col-sm-4">
-														Image 3<span style="color:red">*</span><input type="file" name="img3" required>
+														Foto 3<span style="color:red">*</span><input type="file" name="img3" required>
 													</div>
 												</div>
 
 
 												<div class="form-group">
 													<div class="col-sm-4">
-														Image 4<span style="color:red">*</span><input type="file" name="img4" required>
+														Foto 4<span style="color:red">*</span><input type="file" name="img4" required>
 													</div>
 													<div class="col-sm-4">
-														Image 5<input type="file" name="img5">
+														Foto 5<input type="file" name="img5">
 													</div>
 
 												</div>
@@ -248,7 +248,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-default">
-										<div class="panel-heading">Accessories</div>
+										<div class="panel-heading">Aksesoris yang ada</div>
 										<div class="panel-body">
 
 
@@ -338,8 +338,8 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 											<div class="form-group">
 												<div class="col-sm-8 col-sm-offset-2">
-													<button class="btn btn-default" type="reset">Cancel</button>
-													<button class="btn btn-primary" name="submit" type="submit">Save changes</button>
+													<button class="btn btn-default" type="reset">Batal</button>
+													<button class="btn btn-primary" name="submit" type="submit">Simpan</button>
 												</div>
 											</div>
 
