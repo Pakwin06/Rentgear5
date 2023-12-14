@@ -1,7 +1,7 @@
 	<nav class="ts-sidebar">
 		<ul class="ts-sidebar-menu">
 
-			<li class="ts-label">Main</li>
+			<li class="ts-label">UTAMA</li>
 			<li><a href="dashboard.php"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 
 			<li><a href="#"><i class="fa fa-files-o"></i> Brands</a>
@@ -31,6 +31,7 @@
 			<li><a href="testimonials.php"><i class="fa fa-table"></i>Testimonials</a></li>
 			<li><a href="reg-users.php"><i class="fa fa-users"></i> Users</a></li>
 			<li><a href="manage-pages.php"><i class="fa fa-files-o"></i> Manage Halaman</a></li>
+			<li><a href="manage-conactusquery.php"><i class="fa fa-desktop"></i> pertanyaan dari website</a></li>
 			<li><a href="update-contactinfo.php"><i class="fa fa-files-o"></i> Update Contact Info</a></li>
 
 		</ul>

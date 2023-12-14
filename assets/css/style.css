@@ -1064,7 +1064,7 @@ nav.navbar {
 	3.1. Banner
 -------------------------------*/
 .banner-section {
-  background-image: url("../images/banner-image.jpg");
+  background-image: url("../images/mobilgila.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2259,7 +2259,7 @@ form .slider.slider-horizontal {
 ==============================================*/
 
 .page-header {
-  background-image: url("../images/listing-page-header-img.jpg");
+  background-image: url("../images/mobilkeren.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0 none;
@@ -2876,7 +2876,7 @@ table.info-tabel tr td {
 	10. Contact-Us-Page
 ================================*/
 .contactus_page {
-	background-image:url(../images/contact-page-header-img.jpg);	
+	background-image:url(../images/tentangkami1.png);	
 }
 .contact_form {
 	padding:28px;
@@ -3971,9 +3971,9 @@ table.info-tabel tr td {
 /*==========================
 	19. Compare-Page
 ================================*/
-.compare_page {
+/* .compare_page {
 	background-image:url(../images/compare-page-header-img.jpg);
-}
+} */
 .compare_info table td, .compare_info table th {
 	font-size:16px;
 	color:#111;	
