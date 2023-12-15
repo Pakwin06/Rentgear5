@@ -92,7 +92,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 											<form method="post" name="chngpwd" class="form-horizontal" onSubmit="return valid();">
 
 
-												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
+												<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUKSES</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 
 												<?php
 												$id = $_GET['id'];
@@ -107,7 +107,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												?>
 
 														<div class="form-group">
-															<label class="col-sm-4 control-label">Brand Name</label>
+															<label class="col-sm-4 control-label">Nama Brand</label>
 															<div class="col-sm-8">
 																<input type="text" class="form-control" value="<?php echo htmlentities($result->BrandName); ?>" name="brand" id="brand" required>
 															</div>
@@ -121,7 +121,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 												<div class="form-group">
 													<div class="col-sm-8 col-sm-offset-4">
 
-														<button class="btn btn-primary" name="submit" type="submit">Submit</button>
+														<button class="btn btn-primary" name="submit" type="submit">Simpan</button>
 													</div>
 												</div>
 

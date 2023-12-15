@@ -91,23 +91,23 @@ if (strlen($_SESSION['alogin']) == 0) {
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>Vehicle Title</th>
+												<th>Nama Kendaraan</th>
 												<th>Brand </th>
-												<th>Price Per day</th>
-												<th>Fuel Type</th>
-												<th>Model Year</th>
-												<th>Action</th>
+												<th>Harga per Hari</th>
+												<th>Bahan Bakar</th>
+												<th>Tahun</th>
+												<th>Aksi</th>
 											</tr>
 										</thead>
 										<tfoot>
 											<tr>
 												<th>#</th>
-												<th>Vehicle Title</th>
+												<th>Nama Kendaraan</th>
 												<th>Brand </th>
-												<th>Price Per day</th>
-												<th>Fuel Type</th>
-												<th>Model Year</th>
-												<th>Action</th>
+												<th>Harga per Hari</th>
+												<th>Bahan Bakar</th>
+												<th>Tahun</th>
+												<th>Aksi</th>
 											</tr>
 											</tr>
 										</tfoot>

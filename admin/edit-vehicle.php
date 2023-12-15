@@ -117,12 +117,12 @@ if (strlen($_SESSION['alogin']) == 0) {
 					<div class="row">
 						<div class="col-md-12">
 
-							<h2 class="page-title">Edit Vehicle</h2>
+							<h2 class="page-title">Edit Kendaraan</h2>
 
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-default">
-										<div class="panel-heading">Basic Info</div>
+										<div class="panel-heading">Info</div>
 										<div class="panel-body">
 											<?php if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 											<?php
@@ -138,11 +138,11 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 													<form method="post" class="form-horizontal" enctype="multipart/form-data">
 														<div class="form-group">
-															<label class="col-sm-2 control-label">Vehicle Title<span style="color:red">*</span></label>
+															<label class="col-sm-2 control-label">Nama Kendaraan<span style="color:red">*</span></label>
 															<div class="col-sm-4">
 																<input type="text" name="vehicletitle" class="form-control" value="<?php echo htmlentities($result->VehiclesTitle) ?>" required>
 															</div>
-															<label class="col-sm-2 control-label">Select Brand<span style="color:red">*</span></label>
+															<label class="col-sm-2 control-label">Pilih Brand<span style="color:red">*</span></label>
 															<div class="col-sm-4">
 																<select class="selectpicker" name="brandname" required>
 																	<option value="<?php echo htmlentities($result->bid); ?>"><?php echo htmlentities($bdname = $result->BrandName); ?> </option>
@@ -168,18 +168,18 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 														<div class="hr-dashed"></div>
 														<div class="form-group">
-															<label class="col-sm-2 control-label">Vehical Overview<span style="color:red">*</span></label>
+															<label class="col-sm-2 control-label">Overview<span style="color:red">*</span></label>
 															<div class="col-sm-10">
 																<textarea class="form-control" name="vehicalorcview" rows="3" required><?php echo htmlentities($result->VehiclesOverview); ?></textarea>
 															</div>
 														</div>
 
 														<div class="form-group">
-															<label class="col-sm-2 control-label">Price Per Day(in USD)<span style="color:red">*</span></label>
+															<label class="col-sm-2 control-label">Harga Per Hari(Rupiah)<span style="color:red">*</span></label>
 															<div class="col-sm-4">
 																<input type="text" name="priceperday" class="form-control" value="<?php echo htmlentities($result->PricePerDay); ?>" required>
 															</div>
-															<label class="col-sm-2 control-label">Select Fuel Type<span style="color:red">*</span></label>
+															<label class="col-sm-2 control-label">Pilih Bahan Bakar<span style="color:red">*</span></label>
 															<div class="col-sm-4">
 																<select class="selectpicker" name="fueltype" required>
 																	<option value="<?php echo htmlentities($result->FuelType); ?>"> <?php echo htmlentities($result->FuelType); ?> </option>
@@ -193,11 +193,11 @@ if (strlen($_SESSION['alogin']) == 0) {
 
 
 														<div class="form-group">
-															<label class="col-sm-2 control-label">Model Year<span style="color:red">*</span></label>
+															<label class="col-sm-2 control-label">Model Tahun<span style="color:red">*</span></label>
 															<div class="col-sm-4">
 																<input type="text" name="modelyear" class="form-control" value="<?php echo htmlentities($result->ModelYear); ?>" required>
 															</div>
-															<label class="col-sm-2 control-label">Seating Capacity<span style="color:red">*</span></label>
+															<label class="col-sm-2 control-label">Kapasitas kursi<span style="color:red">*</span></label>
 															<div class="col-sm-4">
 																<input type="text" name="seatingcapacity" class="form-control" value="<?php echo htmlentities($result->SeatingCapacity); ?>" required>
 															</div>
@@ -205,7 +205,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<div class="hr-dashed"></div>
 														<div class="form-group">
 															<div class="col-sm-12">
-																<h4><b>Vehicle Images</b></h4>
+																<h4><b>Foto Kendaraan</b></h4>
 															</div>
 														</div>
 
@@ -213,15 +213,15 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<div class="form-group">
 															<div class="col-sm-4">
 																Image 1 <img src="img/vehicleimages/<?php echo htmlentities($result->Vimage1); ?>" width="300" height="200" style="border:solid 1px #000">
-																<a href="changeimage1.php?imgid=<?php echo htmlentities($result->id) ?>">Change Image 1</a>
+																<a href="changeimage1.php?imgid=<?php echo htmlentities($result->id) ?>">Ganti Image 1</a>
 															</div>
 															<div class="col-sm-4">
 																Image 2<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage2); ?>" width="300" height="200" style="border:solid 1px #000">
-																<a href="changeimage2.php?imgid=<?php echo htmlentities($result->id) ?>">Change Image 2</a>
+																<a href="changeimage2.php?imgid=<?php echo htmlentities($result->id) ?>">Ganti Image 2</a>
 															</div>
 															<div class="col-sm-4">
 																Image 3<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage3); ?>" width="300" height="200" style="border:solid 1px #000">
-																<a href="changeimage3.php?imgid=<?php echo htmlentities($result->id) ?>">Change Image 3</a>
+																<a href="changeimage3.php?imgid=<?php echo htmlentities($result->id) ?>">Ganti Image 3</a>
 															</div>
 														</div>
 
@@ -229,7 +229,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 														<div class="form-group">
 															<div class="col-sm-4">
 																Image 4<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage4); ?>" width="300" height="200" style="border:solid 1px #000">
-																<a href="changeimage4.php?imgid=<?php echo htmlentities($result->id) ?>">Change Image 4</a>
+																<a href="changeimage4.php?imgid=<?php echo htmlentities($result->id) ?>">Ganti Image 4</a>
 															</div>
 															<div class="col-sm-4">
 																Image 5
@@ -237,7 +237,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 																	echo htmlentities("File not available");
 																} else { ?>
 																	<img src="img/vehicleimages/<?php echo htmlentities($result->Vimage5); ?>" width="300" height="200" style="border:solid 1px #000">
-																	<a href="changeimage5.php?imgid=<?php echo htmlentities($result->id) ?>">Change Image 5</a>
+																	<a href="changeimage5.php?imgid=<?php echo htmlentities($result->id) ?>">Ganti Image 5</a>
 																<?php } ?>
 															</div>
 
@@ -253,7 +253,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 							<div class="row">
 								<div class="col-md-12">
 									<div class="panel panel-default">
-										<div class="panel-heading">Accessories</div>
+										<div class="panel-heading">Aksesoris</div>
 										<div class="panel-body">
 
 
@@ -437,7 +437,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 															<div class="form-group">
 																<div class="col-sm-8 col-sm-offset-2">
 
-																	<button class="btn btn-primary" name="submit" type="submit" style="margin-top:4%">Save changes</button>
+																	<button class="btn btn-primary" name="submit" type="submit" style="margin-top:4%">Simpan Perubahan</button>
 																</div>
 															</div>
 
