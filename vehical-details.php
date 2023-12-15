@@ -131,7 +131,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="col-md-3">
               <div class="price_info">
-                <p>$<?php echo htmlentities($result->PricePerDay); ?> </p>Per Day
+                <p>Rp <?php echo htmlentities($result->PricePerDay); ?> </p>Per Hari
 
               </div>
             </div>
@@ -143,16 +143,16 @@ if (isset($_POST['submit'])) {
 
                   <li> <i class="fa fa-calendar" aria-hidden="true"></i>
                     <h5><?php echo htmlentities($result->ModelYear); ?></h5>
-                    <p>Reg.Year</p>
+                    <p>Tahun</p>
                   </li>
                   <li> <i class="fa fa-cogs" aria-hidden="true"></i>
                     <h5><?php echo htmlentities($result->FuelType); ?></h5>
-                    <p>Fuel Type</p>
+                    <p>Bahan Bakar</p>
                   </li>
 
                   <li> <i class="fa fa-user-plus" aria-hidden="true"></i>
                     <h5><?php echo htmlentities($result->SeatingCapacity); ?></h5>
-                    <p>Seats</p>
+                    <p>Kursi</p>
                   </li>
                 </ul>
               </div>
@@ -160,9 +160,9 @@ if (isset($_POST['submit'])) {
                 <div class="listing_detail_wrap">
                   <!-- Nav tabs -->
                   <ul class="nav nav-tabs gray-bg" role="tablist">
-                    <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Vehicle Overview </a></li>
+                    <li role="presentation" class="active"><a href="#vehicle-overview " aria-controls="vehicle-overview" role="tab" data-toggle="tab">Overview </a></li>
 
-                    <li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Accessories</a></li>
+                    <li role="presentation"><a href="#accessories" aria-controls="accessories" role="tab" data-toggle="tab">Aksesoris</a></li>
                   </ul>
 
                   <!-- Tab panes -->
@@ -180,7 +180,7 @@ if (isset($_POST['submit'])) {
                       <table>
                         <thead>
                           <tr>
-                            <th colspan="2">Accessories</th>
+                            <th colspan="2">Aksesoris</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -326,26 +326,26 @@ if (isset($_POST['submit'])) {
               </div>
               <div class="sidebar_widget">
                 <div class="widget_heading">
-                  <h5><i class="fa fa-envelope" aria-hidden="true"></i>Book Now</h5>
+                  <h5><i class="fa fa-envelope" aria-hidden="true"></i>Book Sekarang</h5>
                 </div>
                 <form method="post">
                   <div class="form-group">
-                    <label>From Date:</label>
+                    <label>Dari Tanggal:</label>
                     <input type="date" class="form-control" name="fromdate" placeholder="From Date" required>
                   </div>
                   <div class="form-group">
-                    <label>To Date:</label>
+                    <label>sampai Tanggal:</label>
                     <input type="date" class="form-control" name="todate" placeholder="To Date" required>
                   </div>
                   <div class="form-group">
-                    <textarea rows="4" class="form-control" name="message" placeholder="Message" required></textarea>
+                    <textarea rows="4" class="form-control" name="message" placeholder="Pesan" required></textarea>
                   </div>
                   <?php if ($_SESSION['login']) { ?>
                     <div class="form-group">
                       <input type="submit" class="btn" name="submit" value="Book Now">
                     </div>
                   <?php } else { ?>
-                    <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login For Book</a>
+                    <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login Untuk Book</a>
 
                   <?php } ?>
                 </form>
@@ -359,7 +359,7 @@ if (isset($_POST['submit'])) {
 
           <!--Similar-Cars-->
           <div class="similar_cars">
-            <h3>Similar Cars</h3>
+            <h3>Rekomendasi</h3>
             <div class="row">
               <?php
               $bid = $_SESSION['brndid'];
@@ -377,11 +377,11 @@ if (isset($_POST['submit'])) {
                       </div>
                       <div class="product-listing-content">
                         <h5><a href="vehical-details.php?vhid=<?php echo htmlentities($result->id); ?>"><?php echo htmlentities($result->BrandName); ?> , <?php echo htmlentities($result->VehiclesTitle); ?></a></h5>
-                        <p class="list-price">$<?php echo htmlentities($result->PricePerDay); ?></p>
+                        <p class="list-price">Rp <?php echo htmlentities($result->PricePerDay); ?></p>
 
                         <ul class="features_list">
 
-                          <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity); ?> seats</li>
+                          <li><i class="fa fa-user" aria-hidden="true"></i><?php echo htmlentities($result->SeatingCapacity); ?> Kursi</li>
                           <li><i class="fa fa-calendar" aria-hidden="true"></i><?php echo htmlentities($result->ModelYear); ?> model</li>
                           <li><i class="fa fa-car" aria-hidden="true"></i><?php echo htmlentities($result->FuelType); ?></li>
                         </ul>

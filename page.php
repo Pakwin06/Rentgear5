@@ -82,7 +82,7 @@ include('includes/config.php');
 
 
               <h2><?php echo htmlentities($result->PageName); ?></h2>
-              <p><?php echo $result->detail; ?> </p>
+              <p text-align: left;><?php echo $result->detail; ?> </p>
             </div>
         <?php }
     } ?>

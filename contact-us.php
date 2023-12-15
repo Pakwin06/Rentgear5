@@ -156,12 +156,13 @@ if (isset($_POST['send'])) {
                       <div class="contact_info_m"><?php echo htmlentities($result->Address); ?></div>
                     </li>
                     <li>
-                      <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                      <div class="contact_info_m"><a href="tel:61-1234-567-90"><?php echo htmlentities($result->EmailId); ?></a></div>
+                    <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                      <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php echo htmlentities($result->EmailId); ?></a></div>
                     </li>
                     <li>
-                      <div class="icon_wrap"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
-                      <div class="contact_info_m"><a href="mailto:contact@exampleurl.com"><?php echo htmlentities($result->ContactNo); ?></a></div>
+                    <div class="icon_wrap"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                      <div class="contact_info_m"><a href="tel:61-1234-567-90"><?php echo htmlentities($result->ContactNo); ?></a></div>
+
                     </li>
                   </ul>
               <?php }

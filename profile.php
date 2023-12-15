@@ -165,7 +165,7 @@ if (strlen($_SESSION['login']) == 0) {
                         <input class="form-control white_bg" name="mobilenumber" value="<?php echo htmlentities($result->ContactNo); ?>" id="phone-number" type="text" required>
                       </div>
                       <div class="form-group">
-                        <label class="control-label">Date of Birth&nbsp (Tanggal/Bulan/Tahun)</label>
+                        <label class="control-label">Tanggal Lahir&nbsp (Tanggal/Bulan/Tahun)</label>
                         <input class="form-control white_bg" value="<?php echo htmlentities($result->dob); ?>" name="dob" placeholder="dd/mm/yyyy" id="birth-date" type="text">
                       </div>
                       <div class="form-group">
