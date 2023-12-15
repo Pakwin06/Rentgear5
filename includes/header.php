@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-3 col-md-2">
-          <div class="logo"> <a href="index.php"><img src="assets/images/logo.png" alt="image" /></a> </div>
+          <div class="logo"> <a href="index.php"><img src="assets/images/carlogo.png" alt="image" /></a> </div>
         </div>
         <div class="col-sm-9 col-md-10">
           <div class="header_info">
@@ -48,7 +48,7 @@
   <nav id="navigation_bar" class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
-        <button id="menu_slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> <span class="sr-only"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <button id="menu_slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       </div>
       <div class="header_wrap">
         <div class="user_login">
