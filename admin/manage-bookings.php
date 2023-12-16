@@ -102,32 +102,32 @@ if (strlen($_SESSION['alogin']) == 0) {
 							<div class="panel panel-default">
 								<div class="panel-heading">Bookings Info</div>
 								<div class="panel-body">
-									<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
+									<?php if ($error) { ?><div class="errorWrap"><strong>ERROR</strong>:<?php echo htmlentities($error); ?> </div><?php } else if ($msg) { ?><div class="succWrap"><strong>SUKSES</strong>:<?php echo htmlentities($msg); ?> </div><?php } ?>
 									<table id="zctb" class="display table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 										<thead>
 											<tr>
 												<th>#</th>
 												<th>Nama</th>
-												<th>Vehicle</th>
-												<th>From Date</th>
-												<th>To Date</th>
-												<th>Message</th>
+												<th>Kendaraan</th>
+												<th>Dari Tanggal</th>
+												<th>Sampai Tanggal</th>
+												<th>Pesan</th>
 												<th>Status</th>
-												<th>Posting date</th>
-												<th>Action</th>
+												<th>Tanggal Posting</th>
+												<th>Aksi</th>
 											</tr>
 										</thead>
 										<tfoot>
 											<tr>
 												<th>#</th>
-												<th>Name</th>
-												<th>Vehicle</th>
-												<th>From Date</th>
-												<th>To Date</th>
-												<th>Message</th>
+												<th>Nama</th>
+												<th>Kendaraan</th>
+												<th>Dari Tanggal</th>
+												<th>Sampai Tanggal</th>
+												<th>Pesan</th>
 												<th>Status</th>
-												<th>Posting date</th>
-												<th>Action</th>
+												<th>Tanggal Posting</th>
+												<th>Aksi</th>
 											</tr>
 										</tfoot>
 										<tbody>
@@ -156,10 +156,10 @@ if (strlen($_SESSION['alogin']) == 0) {
 															}
 															?></td>
 														<td><?php echo htmlentities($result->PostingDate); ?></td>
-														<td><a href="manage-bookings.php?aeid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Do you really want to Confirm this booking')"> Confirm</a> /
+														<td><a href="manage-bookings.php?aeid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Apakah kamu yakin menkonfirmasi booking ini?')"> Konfirmasi</a> /
 
 
-															<a href="manage-bookings.php?eid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Do you really want to Cancel this Booking')"> Cancel</a>
+															<a href="manage-bookings.php?eid=<?php echo htmlentities($result->id); ?>" onclick="return confirm('Apakah kamu mau membatalkan booking ini')"> Batal</a>
 														</td>
 
 													</tr>
